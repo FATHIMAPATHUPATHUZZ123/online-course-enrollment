@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Course Enrollment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(rgba(216,236,255,0.9), rgba(168,216,255,0.9)),
+        url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #003366;
+    }
+
+    .navbar {
+      width: 100%;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255,255,255,0.85);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+
+    .navbar h2 {
+      font-size: 1.8em;
+      color: #003366;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #003366;
+      padding: 10px 20px;
+      background: #a8d8ff;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: #4da3ff;
+      color: white;
+    }
+
+    .hero {
+      padding: 160px 60px 100px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 15px;
+      color: #003366;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: auto;
+      color: #224d7a;
+    }
+
+    .btn-main {
+      margin-top: 25px;
+      padding: 12px 35px;
+      background: #4da3ff;
+      color: white;
+      font-weight: 600;
+      border-radius: 12px;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn-main:hover {
+      transform: scale(1.08);
+      background: #3c8fe6;
+    }
+
+    .course-section {
+      padding: 80px 60px;
+      text-align: center;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .course-card {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      transition: 0.3s;
+    }
+
+    .course-card img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .rating {
+      margin: 10px 0;
+    }
+
+    .intro-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 18px;
+      background: #4da3ff;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: 0.3s;
+    }
+
+    .intro-link:hover {
+      background: #3c8fe6;
+    }
+
+    .review-section {
+      padding: 80px 60px;
+      background: rgba(255,255,255,0.85);
+    }
+
+    .review-box {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .review-item {
+      background: white;
+      margin-top: 20px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact {
+      padding: 80px 60px;
+      background: #e6f2ff;
+      text-align: center;
+    }
+
+    footer {
+      padding: 20px;
+      background: white;
+      text-align: center;
+      margin-top: 40px;
+      border-top: 2px solid #a8d8ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>Online Course Enrollment</h2>
+    <div class="nav-links">
+      <a href="instructor/register_instructor.php">Instructor Register</a>
+      <a href="instructor/login_instructor.php">Instructor Login</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Start Your Learning Journey</h1>
+    <p>Explore high-quality online courses, learn new skills, complete assignments, and earn certificates from the comfort of your home.</p>
+    <a href="student/login.student.php" class="btn-main">Join as Student</a>
+  </div>
+
+  <section class="course-section">
+    <h2>Popular Courses</h2>
+    <div class="course-grid">
+
+      <div class="course-card">
+        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg">
+        <h3>Full Stack Web Development</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p>Learn HTML, CSS, JavaScript, PHP, MySQL and become a professional full-stack developer.</p>
+        <a class="intro-link" target="_blank" href="https://www.youtube.com/watch?v=3JluqTojuME">Watch Introduction</a>
+      </div>
+
+      <div class="course-card">
+        <img src="https://img.youtube.com/vi/2Ji-clqUYnA/maxresdefault.jpg">
+        <h3>Python for Beginners</h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p>An easy introduction to Python. Build logic, solve problems, and create applications.</p>
+        <a class="intro-link" target="_blank" href="https://www.youtube.com/watch?v=kqtD5dpn9C8">Watch Introduction</a>
+      </div>
+
+      <div class="course-card">
+        <img src="https://img.youtube.com/vi/eIrMbAQSU34/maxresdefault.jpg">
+        <h3>Java Programming Masterclass</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p>Learn Java from basic to advanced with real-world projects and interview preparation.</p>
+        <a class="intro-link" target="_blank" href="https://www.youtube.com/watch?v=eIrMbAQSU34">Watch Introduction</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="review-section">
+    <h2>What Students Say</h2>
+    <div class="review-box">
+      <div class="review-item">
+        <h3>Fathima</h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p>"This platform helped me learn web development step by step. The assignments and progress tracking were very useful!"</p>
+      </div>
+      <div class="review-item">
+        <h3>Rahul</h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p>"Great instructors and clear course materials. The certification process was smooth too."</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@onlinecourses.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Address: Chennai, India</p>
+  </section>
+
+  <footer>
+    © 2025 Online Course Enrollment System | Designed by Fathima
+    <br>
+    <a href="admin/admin_login.php">Admin Login</a>
+  </footer>
+
+</body>
+</html>
