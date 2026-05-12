@@ -24,4 +24,4 @@ This is a web-based online course enrollment system developed using PHP and MySQ
 3. Import database in phpMyAdmin
 4. Start Apache and MySQL
 5. Open project in browser
-   ![Alt text](images/Screenshot (68).png)
+   ![Alt text](images/Screenshot_(68).png)
